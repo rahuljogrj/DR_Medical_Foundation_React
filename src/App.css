@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2220208a
+}
+
+.navbarcustom {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+
+/* services */
+
+.Scontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Scontainer .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+    height: 300px;
+
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.Scontainer .card:hover {
+    height: 400px;
+    cursor: pointer;
+}
+
+.Scontainer .card .img-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.Scontainer .card:hover .img-box {
+    top: -70px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.Scontainer .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.Scontainer .card .content {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 30px;
+    padding: 0px 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.Scontainer .card:hover .content {
+    top: 130px;
+    height: auto;
+}
+
+.Scontainer .card .content h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.Scontainer .card .content p {
+    color: #333;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    /* services */
+
+    .Scontainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .Scontainer .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 300px;
+        height: 280px;
+        background: white;
+        border-radius: 20px;
+        transition: 0.5s;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    }
+
+    .Scontainer .card:hover {
+        height: 350px;
+        cursor: pointer;
+    }
+
+    .Scontainer .card .img-box {
+        position: absolute;
+        top: 13px;
+        margin: auto;
+        width: 90%;
+        height: 200px;
+        background: #333;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .Scontainer .card:hover .img-box {
+        top: -70px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+
+    .Scontainer .card .img-box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    .Scontainer .card .content {
+        position: absolute;
+        top: 230px;
+        width: 100%;
+        height: 30px;
+        padding: 0px 30px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .Scontainer .card:hover .content {
+        top: 120px;
+        height: auto;
+    }
+
+    .Scontainer .card .content h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: blue;
+    }
+
+    .Scontainer .card .content p {
+        color: #333;
+        text-align: justify;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+
+    /* services */
+
+    .Scontainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .Scontainer .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 280px;
+        background: white;
+        border-radius: 20px;
+        transition: 0.5s;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    }
+
+    .Scontainer .card:hover {
+        height: 400px;
+        cursor: pointer;
+    }
+
+    .Scontainer .card .img-box {
+        position: absolute;
+        left: 14px;
+        margin: auto;
+        width: 90%;
+        height: 200px;
+        background: #333;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .Scontainer .card:hover .img-box {
+        top: -70px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+
+    .Scontainer .card .img-box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    .Scontainer .card .content {
+        position: absolute;
+        top: 230px;
+        width: 100%;
+        height: 30px;
+        padding: 0px 30px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+
+    }
+
+    .Scontainer .card:hover .content {
+        top: 140px;
+        height: auto;
+
+    }
+
+    .Scontainer .card .content h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: blue;
+    }
+
+    .Scontainer .card .content p {
+        color: #333;
+        text-align: justify;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+
+}
+
+
+/* why choose us */
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span,
+a,
+a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-head h4 {
+    position: relative;
+    padding: 0;
+    color: #1512e2;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 30px;
+}
+
+.section-head h4:before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #ad6e7a;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.section-head h4 span {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #2f2f2f
+}
+
+p.service_text {
+    color: #cccccc !important;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.section-head p,
+p.awesome_line {
+    color: #818181;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.extra-text {
+    font-size: 34px;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin-bottom: 25px;
+    position: relative;
+    text-transform: none;
+}
+
+.extra-text::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f91942;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.extra-text span {
+    font-weight: 700;
+    color: #6548cf;
+}
+
+.item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+
+.item:hover {
+    background: #6f82ec;
+    border: 5px solid rgb(216, 211, 211);
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+
+.item:hover .item,
+.item:hover span.icon {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+
+.item:hover h6,
+.item:hover p {
+    color: #fff;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+
+.item .icon {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #f91942;
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+/* About us page */
+.wrapper {
+    overflow: hidden;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: scale 0.8s;
+}
+
+.wrapper:hover img {
+    scale: 120%;
+}
+
+
+
+
+/* contact */
+
+.compcont {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+
+
+.compcont a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(87, 80, 80);
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.compcont a:hover {
+    color: blue;
+    scale: calc(1.1);
+
+}
+
+
+.compcont h3 {
+    font-size: 22px;
+    color: blue;
+}
+
+.form-bg {
+    background: url(/images/form-bg.avif);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.493) 0px 7px 29px 0px;
+}
+
+
+
+.mobilelive {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+}
+
+.whatsapplive {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    left: 50px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .mobilelive {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+    }
+
+    .whatsapplive {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+
+        left: 20px;
+        border-radius: 50%;
+    }
+
+}
